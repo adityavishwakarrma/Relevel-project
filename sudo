@@ -1,0 +1,36 @@
+./mvnw spring-boot:run
+mvn spring-boot:run
+
+
+
+
+sudo mysql_secure_installation
+
+sudo mysql
+Once logged into MySQL then from the MySQL prompt execute these commands:
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+FLUSH PRIVILEGES;
+Now verify that the table has the password for the root
+
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+
+
+
+
+
+
+mysql -u root -p 
+
+
+
+
+
+$> mysqld --skip-grant-tables
+
+$> mysql -u root mysql
+
+mysql> update mysql.user set password=PASSWORD("password") where User='root';
+
+mysql> flush privileges;
