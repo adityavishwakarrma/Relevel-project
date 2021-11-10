@@ -1,4 +1,4 @@
-./mvnw spring-boot:run
+.mysql -u root mysql
 mvn spring-boot:run
 
 
@@ -27,9 +27,7 @@ mysql -u root -p
 
 
 
-$> mysqld --skip-grant-tables
 
-$> mysql -u root mysql
 
 mysql> update mysql.user set password=PASSWORD("password") where User='root';
 
